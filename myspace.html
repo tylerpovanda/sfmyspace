@@ -10,7 +10,16 @@
 <script language="JavaScript" src="https://web.archive.org/web/20041031012328js_/http://x.myspace.com/js/myspace.js"></script>
 <script language="Javascript" src="https://web.archive.org/web/20041031012328js_/http://x.myspace.com/js/oas.js"></script>
 
-<body bgcolor="e5e5e5" alink="4e607b" link="4e607b" vlink="4e607b" bottommargin="0" leftmargin="0" rightmargin="0" topmargin="0" onload="">
+<body background="img/sfbckred.jpg"
+		background-size="cover";
+		bgcolor="e5e5e5" 
+		alink="4e607b" 
+		link="4e607b" vlink="4e607b" 
+		bottommargin="0" 
+		leftmargin="0" 
+		rightmargin="0" 
+		topmargin="0" 
+		onload="">
 <div id="tipDiv" style="position:absolute; visibility:hidden; z-index:100"></div>
 <div align="center">	
 
@@ -177,7 +186,7 @@
 				<tr>
 					<!-- Send Message -->
 					<td width="120" height="5" nowrap bgcolor="ffffff" align="center" class="text">
-						<a href="https://twitter.com/intent/tweet?text=.@savefacenj" target="_blank">
+						<a href="mailto:ak4thr@gmail.com" target="_blank">
 							<img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/sendMailIcon.gif" border="0" align="middle">
 						</a>
 					</td> 
@@ -211,11 +220,15 @@
 				</tr>
 				<tr>
 					<!-- instant message -->
-					<td width="130" nowrap height="5" bgcolor="ffffff" align="center" class="text" valign="top"><a href="#" onclick="javascript: launchIC('2102684'); return false;"><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/messagefriend.gif" border="0" align="middle"></a></td>
+					<td width="130" nowrap height="5" bgcolor="ffffff" align="center" class="text" valign="top"><a href="https://twitter.com/intent/tweet?text=.@savefacenj" onclick="javascript: launchIC('2102684'); return false;"><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/messagefriend.gif" border="0" align="middle"></a></td>
 					
 					<td width="15" height="5" bgcolor="ffffff"><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/clear.gif" width="15" height="8" border="0"></td>
 					<!-- block user -->
-					<td width="150" nowrap height="5" bgcolor="ffffff" align="center" class="text" valign="top"><a href=""><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/blockuser.gif" border="0" align="middle"></a>
+					<td width="150" nowrap height="5" bgcolor="ffffff" align="center" class="text" valign="top">
+						<a href="#" onClick="window.open('block.htm','pagename','resizable,height=260,width=370'); return false;">
+							<img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/blockuser.gif" border="0" align="middle">
+						</a><noscript><a href="block.htm" target="_blank">
+						</a></noscript>
 					</td>
 				</tr>
 				<tr>
@@ -230,7 +243,12 @@
 					</td>
 					<!-- rank user -->
 					<td width="150" nowrap height="2" bgcolor="ffffff" align="center" class="text" valign="middle">
-						<a href=""><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/icon_rank_user4.gif" border="0" align="middle">
+	
+
+						<a href="#" onClick="window.open('rank.htm','pagename','resizable,height=260,width=370'); return false;">
+							<img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/site/images/icon_rank_user4.gif" border="0" align="middle">
+						</a><noscript><a href="rank.htm" target="_blank">
+						</a></noscript>
 					</td>
 				</tr>
 				<tr>
@@ -444,7 +462,7 @@
 
 	<style type="text/css">
 	<!-- 
-	font, td, a, body, input, textarea{font-family:Tahoma;font-size:7PT;
+	font, td, a, body, input, textarea{font-family:Tahoma;font-size:8PT;
 	line-height: 8pt; color:white}
 	-->
 	</style>
@@ -475,7 +493,7 @@
 	a.searchlinkSmall:hover, a.blue_white, a.blue_white:link, a.blue_white:active,
 	a.blue_white:visited
 	{ font-family: Tahoma; 
-	   font-size: 7pt;
+	   font-size: 8pt;
 	   line-height: 10px;
 	   color:white;
 	   font-weight: none; 
@@ -485,7 +503,7 @@
 	a:hover, a.readmail:hover, a.redlink:hover, a.blink:hover, a.white:hover, a.white7:hover, a.black7:hover,
 	a.navbar:hover, a.navbar, a.skip:hover, a.redlink7:hover, a.graylink7:hover, a.bluelink:hover, a.searchlinkBig:hover, a.blue_white:hover 
 	{ font-family: Tahoma; 
-	   font-size: 7pt;
+	   font-size: 8pt;
 	   line-height: 10px;
 	   color:red;
 	   font-weight: none; 
@@ -510,7 +528,7 @@
 	.redbtext,
 	.lightbluetext8,
 	{ font-family: Tahoma; 
-	   font-size: 7pt;
+	   font-size: 8pt;
 	   line-height: 10px;
 	   color:white;
 	   font-weight: none; 
@@ -526,6 +544,9 @@
 	}
 	.double-override a:hover{
 		color: yellow;
+	}
+	.disable-click {
+		pointer-events: none;   
 	}
 	-->
 </style>
@@ -762,7 +783,7 @@
 					<td width="441" style="word-wrap:break-word"><span class="orangetext15">Save Face's Friends Comments</span></td>
 				</tr>
 			</table>
-			<table bordercolor="000000" cellspacing="3" cellpadding="0" width="435" align="center" bgcolor="ffffff" border="0">
+			<table class="disable-click" bordercolor="000000" cellspacing="3" cellpadding="0" width="435" align="center" bgcolor="ffffff" border="0">
 				
 					<tr>
 						<td>
@@ -828,43 +849,15 @@ I luv you guys SOOOOO MUCH!! You guys Fucking ROCK!! Keep it UP!!!</td>
 									</tr>
 								
 									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=1470080&amp;Mytoken=20041030182451">Nicole</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=1470080&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00024/97/66/24186679_s.JPG" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:39 PM</span><br><br>Nice to see kids I went to school with making it! Friend of mine told me who you guys were,  and I almost lost it. I pulled out the good ol' yearbook,  haha  ;)
-
-The music rocks,  you guys sound awesome. Next time I do a local history book,  you guys can be in the &quot;Famous Folks from...&quot; section!
-
-Hope to get to one of your shows when you come around again!</td>
-									</tr>
-								
-									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2905614&amp;Mytoken=20041030182451">Your tears are only alibis</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2905614&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/30/66/28616603_s.jpg" border="0"></a><br><br></td>
 										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:29 PM</span><br><br>i love u.</td>
 									</tr>
 								
 									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4708001&amp;Mytoken=20041030182451">Dan &amp; Doug Show</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4708001&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/01/40/28610410_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:16 PM</span><br><br>
-HAPPY HALLOWEEN 
-  FROM YOUR BUDDIES AT THE DAN &amp;amp; DOUG SHOW
-</td>
-									</tr>
-								
-									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3846828&amp;Mytoken=20041030182451"><font color="FF9933">Guitar_Playing_Poetess</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3846828&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00025/41/62/25772614_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:14 PM</span><br><br>I so totally love your sound!! And you're song &quot;I'm Not Okay ( I Promise)&quot; has become my song!! Anyways,  I love you guys!!</td>
+										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:14 PM</span><br><br>I so totally love your sound!! And you're song &quot;Bury Me (Tonight!)&quot; has become my song!! Anyways,  I love you guys!!</td>
 									</tr>
-								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3148323&amp;Mytoken=20041030182451"><font color="FF0099">bEaUtiFuL [doT] bRoKeN</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3148323&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/52/80/28720825_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:12 PM</span><br><br>you guyz need 2 get a picture of the kissing part of the video im not okay ... its so cute ....
-ex oh ex oh
--Dani-</td>
-									</tr>
-								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4050425&amp;Mytoken=20041030182451">elizabeth</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4050425&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00023/90/09/23539009_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 03:10 PM</span><br><br>i love you guys and your music,  youre freakin amazing,  rock on you sexy biatches :D!!!!!!!!!</td>
-									</tr>
+							
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4203723&amp;Mytoken=20041030182451">Anthony</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4203723&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00024/24/42/24522442_s.jpg" border="0"></a><br><br></td>
@@ -884,23 +877,12 @@ but anyhoo  lol x x x &lt;3</td>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4343739&amp;Mytoken=20041030182451">fuckyouimapimp!</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4343739&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/41/81/28571814_s.jpg" border="0"></a><br><br></td>
 										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 02:49 PM</span><br><br>dude you guys are the only cd in my player now...i love you guys...now i sound like a groupie but you fucking rock!</td>
 									</tr>
-
-								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4103900&amp;Mytoken=20041030182451">Katie</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4103900&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/99/28/28658299_s.gif" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 02:36 PM</span><br><br>You guys are the best band ever. Anyone who doesn't know that should be shot. COME BACK TO AUSTIN AGAIN! 
-&lt;3</td>
-									</tr>
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4621040&amp;Mytoken=20041030182451">Vince is tri</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4621040&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/12/43/28613421_s.jpg" border="0"></a><br><br></td>
 										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 02:08 PM</span><br><br>You guys freakin rock. Make love to me now!</td>
 									</tr>
-								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2895611&amp;Mytoken=20041030182451">SCREAMING...and here i thought i was whispering!</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2895611&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00027/96/34/27524369_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 01:53 PM</span><br><br>WERE ALL NOT OK!!! AND THATS WHAT MAKES U GUYS KICK ASS..</td>
-									</tr>
+							
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4481032&amp;Mytoken=20041030182451">Cassidy</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4481032&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/78/29/28719287_s.jpg" border="0"></a><br><br></td>
@@ -914,9 +896,9 @@ but anyhoo  lol x x x &lt;3</td>
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2775669&amp;Mytoken=20041030182451">&hearts;kaleigh&hearts;</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2775669&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://e.myspace.com/00022/33/31/22171333_s.JPG" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 01:34 PM</span><br><br>v excited about the gigs with TBS in jan.
+										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 01:34 PM</span><br><br>v excited about the gigs with MJ in nov.
 
-surprised sf aren't supporting The Used instead though...</td>
+
 									</tr>
 								
 									<tr>
@@ -940,13 +922,10 @@ Keep It Phenomenal,
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4731832&amp;Mytoken=20041030182451">save face bitch&lt;3</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4731832&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/82/92/28872928_s.gif" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 12:23 PM</span><br><br>hey,  i saw you guys on Tuesday in NYC. you were amazing and i was also at your taping of that MTV2 show Discover and Download on Oct. 11th. cant wait to see you with all my friends on Dec. 30th at Starland! &lt;3jenn</td>
+										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 12:23 PM</span><br><br>hey,  i saw you guys on Tuesday in NYC. you were amazing and i was also at your taping of that MTV2 show Discover and Download on Oct. 11th. cant wait to see you with all my friends at union transfer! &lt;3jenn</td>
 									</tr>
 								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4236262&amp;Mytoken=20041030182451">karina</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4236262&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00026/47/73/26483774_s.gif" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 12:22 PM</span><br><br>YoU GuYs RoCk AnD StUff . DuDe AnD YoUr GaMe RoX!!!!CoMMeNt Me BaCk</td>
-									</tr>
+
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2498631&amp;Mytoken=20041030182451">cori.</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2498631&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/94/47/28877449_s.jpg" border="0"></a><br><br></td>
@@ -964,11 +943,7 @@ www.myspace.com/feelslikejuly</td>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=976707&amp;Mytoken=20041030182451">KiSsofDeaTh</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=976707&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/70/76/976707/15520921_s.jpg" border="0"></a><br><br></td>
 										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 11:26 AM</span><br><br>i love u sf lol.. just wanted to say that... u guys are the shit take care</td>
 									</tr>
-								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=631079&amp;Mytoken=20041030182451">Natalie</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=631079&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://i.myspace.com/97/01/631079/15582279_s.gif" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 11:06 AM</span><br><br>hey guys!  i did Demolition Lovers for the talent show my freshman year. my friend sang and i play acoustic guitar. we're sorry we raped that song,  its one of my favorites though. alright,  best of luck</td>
-									</tr>
+
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3852496&amp;Mytoken=20041030182451"><font color="008800"> |&gt;&gt; Alyza&lt;&lt;|</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3852496&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00027/16/35/27435361_s.jpg" border="0"></a><br><br></td>
@@ -990,17 +965,13 @@ www.myspace.com/feelslikejuly</td>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4708039&amp;Mytoken=20041030182451">margarita</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=4708039&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/18/38/28858381_s.jpg" border="0"></a><br><br></td>
 										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 10:11 AM</span><br><br>hey happy HOLLOWEEN!!!!  and HAPPY B-DAY An!!! 
 
-xoxox much love margarita!!!</td>
+xoxox much love !!!</td>
 									</tr>
-								
-									<tr>
-										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2432249&amp;Mytoken=20041030182451">× sweet angel of mercy ×</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2432249&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00025/37/56/25656573_s.JPG" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 10:11 AM</span><br><br>the article in the new AP is amazing!! Some very sad things about Gerared and I wish him the best &lt;333</td>
-									</tr>
+							
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2923690&amp;Mytoken=20041030182451">&hearts;Macy&hearts;</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=2923690&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00028/98/85/28415889_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 10:08 AM</span><br><br>I'll be seein yall on monday nov.1!!!!...Get ready cuz here I come....PAR-TAY at rocketown!!!!</td>
+										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 10:08 AM</span><br><br>I'll be seein yall on nov.11!!!!...Get ready cuz here I come....PAR-TAY at rocketown!!!!</td>
 									</tr>
 								
 									<tr>
@@ -1015,7 +986,7 @@ xoxox much love margarita!!!</td>
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3139237&amp;Mytoken=20041030182451">ape</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=3139237&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://c.myspace.com/00027/46/38/27828364_s.JPG" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 09:42 AM</span><br><br>hey,  you guys are like best friends with the used huh?   i love you guys you should tour with afi and the used... those are my all time FAVORITE BANDS&gt;.. and the lost prophets are prrreeetty awesome.. Ty i love your lyrics  they are so frrreeeggggiiin good.. i love your voice... it spreaks to me.. lol xoxoxo love you &lt;3&lt;3  april</td>
+										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 09:42 AM</span><br><br>hey,  you guys are like best friends with mom jeans huh?   i love you guys you should tour with mom jeans and grad life... those are my all time FAVORITE BANDS&gt;.. and the jfcrew are prrreeetty awesome.. Ty i love your lyrics  they are so frrreeeggggiiin good.. i love your voice... it spreaks to me.. lol xoxoxo love you &lt;3&lt;3  april</td>
 									</tr>
 								
 									<tr>
@@ -1031,7 +1002,7 @@ xox jen</td>
 								
 									<tr>
 										<td align="center" valign="top" width="150" bgcolor="FF9933" style="word-wrap:break-word"><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=1411717&amp;Mytoken=20041030182451">"Hey, it's your funeral mama"</a><br><br><a href="https://web.archive.org/web/20041031012328/http://www.myspace.com/index.cfm?fuseaction=user.viewProfile&amp;friendID=1411717&amp;Mytoken=20041030182451"><img src="https://web.archive.org/web/20041031012328im_/http://g.myspace.com/00028/26/60/28870662_s.jpg" border="0"></a><br><br></td>
-										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 09:04 AM</span><br><br>save face makes me wanna move back to Newark,  NJ.</td>
+										<td bgcolor="F9D6B4" align="left" valign="top" width="260" style="word-wrap:break-word"><span class="blacktext10">Oct 30, 2004 09:04 AM</span><br><br>save face makes me wanna move back to new jersey.</td>
 									</tr>
 								
 									<tr>
